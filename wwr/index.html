@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyler Smith | WDD 130</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Welcome to Tyler Smith's homepage for WDD 130. Explore my personal and professional IT projects, outdoor adventures, and family life.">
-    <meta name="author" content="Tyler Smith">
+    <title>Rafting Company | Home</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Welcome to Rafting Company. Explore our thrilling white water rafting adventures and sign up for our newsletter.">
 </head>
 <body>
     <header>
+        <img src="styles/images/logo.png" alt="Rafting Company Logo" class="logo">
+        <h1>White Water Rafting</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <div class="grid">
-        <aside class="box">
-            <h2>Idaho</h2>
-            <img src="styles/images/idaho.jpg" alt="Scenic Idaho">
-            <p>Idaho, known for its mountainous landscapes and vast swaths of protected wilderness and outdoor recreation areas.</p>
-        </aside>
-        <main>
-            <h1>Tyler Smith | WDD 130</h1>
-            <div class="intro-section">
-                <img src="styles/images/profile.jpg" alt="Tyler Smith" class="profile">
-                <div class="intro-box">
-                    <p class="intro">Hey, my name is Tyler Smith. I live in Pocatello, Idaho with my wife and son. I currently run my own IT company and enjoy playing video games, camping, hiking, and engaging in outdoor activities.</p>
+    <main>
+        <section class="hero">
+            <img src="styles/images/hero.jpg" alt="Hero Image" class="hero-img">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+        </section>
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Explore our thrilling trips and adventures.</p>
+            <a href="trips.html" class="btn">View Trips</a>
+        </section>
+        <section class="offerings">
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="styles/images/nile-river.jpg" alt="Rafting Adventure">
+                    <h3>Adventure Awaits</h3>
+                    <p>Join us for an unforgettable white water rafting experience.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="styles/images/peru-rafting.jpg" alt="Rafting Excitement">
+                    <h3>Exciting Rapids</h3>
+                    <p>Navigate through some of the most exciting rapids with our expert guides.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="styles/images/salmon-river.jpg" alt="Family Fun">
+                    <h3>Family Fun</h3>
+                    <p>Our trips are perfect for families looking for adventure and fun.</p>
                 </div>
             </div>
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/frankfurt-germany-temple?lang=eng" target="_blank">Frankfurt Germany Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/richmond-virginia-temple?lang=eng" target="_blank">Richmond Virginia Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/idaho-falls-idaho-temple?lang=eng" target="_blank">Idaho Falls Idaho Temple</a></li>
-            </ul>
-        </main>
-    </div>
+        </section>
+    </main>
     <footer>
-        <p>©️ 2024 Tyler Smith Pocatello, ID</p>
+        <p>©️ 2024 Rafting Company | Tyler Smith</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="styles/images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="styles/images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="styles/images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <a href="styles/images/wireframe-home.png" target="_blank">View Home Page Wireframe</a>
     </footer>
 </body>
 </html>
